@@ -1,19 +1,13 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>bckgrnd-clr</title>
-</head>
-
-<body>
-
   <script type="text/javascript">
-    var color = window.location.search.substring(1);
-    document.body.style.backgroundColor = color;
+    window.onload = function() {
+      document.body.style.backgroundColor = window.location.hash;
+    };
   </script>
-  
-</body>
-
+</head>
+<body></body>
 </html>
